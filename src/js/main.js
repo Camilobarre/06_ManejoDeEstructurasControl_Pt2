@@ -21,6 +21,7 @@ const listFruits = [
     "pomegranate"
   ];
 
-  // Print list with classic for
-
-  
+// Print list with classic for
+for (let i =0; i < listFruits.length; i++) {
+    
+}
