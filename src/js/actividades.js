@@ -1,6 +1,6 @@
 //Ejercicio 1
-let numero1_Ejercicio1 = prompt("Ingresa el primer número:")
-let numero2_Ejercicio1 = prompt("Ingresa el segundo número:")
+const numero1_Ejercicio1 = prompt("Ingresa el primer número:")
+const numero2_Ejercicio1 = prompt("Ingresa el segundo número:")
 
 if (numero1_Ejercicio1 > numero2_Ejercicio1) {
     let resta_Ejercicio1 = numero2_Ejercicio1 - numero1_Ejercicio1;
@@ -21,25 +21,30 @@ let numero1_Ejercicio2 = prompt("Ingresa el primer número:")
 let numero2_Ejercicio2 = prompt("Ingresa el segundo número:")
 let resultado_Ejercicio2;
 
-switch (operacion) {
+switch (operacionEjercicio2) {
     case "suma":
         resultado_Ejercicio2 = numero1_Ejercicio2 + numero2_Ejercicio2;
+        resultado_Ejercicio2 = parseFloat(Math.round(resultado_Ejercicio2))
+        console.log(`El resultado de ${operacion} de ${numero1_Ejercicio2} y ${numero2_Ejercicio2} es ${resultado_Ejercicio2}`);
         break;
     case "resta":
         resultado_Ejercicio2 = numero1_Ejercicio2 - numero2_Ejercicio2;
+        resultado_Ejercicio2 = parseFloat(Math.round(resultado_Ejercicio2))
+        console.log(`El resultado de ${operacion} de ${numero1_Ejercicio2} y ${numero2_Ejercicio2} es ${resultado_Ejercicio2}`);
         break;
     case "multiplicación":
         resultado_Ejercicio2 = numero1_Ejercicio2 * numero2_Ejercicio2;
+        resultado_Ejercicio2 = parseFloat(Math.round(resultado_Ejercicio2))
+        console.log(`El resultado de ${operacion} de ${numero1_Ejercicio2} y ${numero2_Ejercicio2} es ${resultado_Ejercicio2}`);
         break;
     case "división":
         resultado_Ejercicio2 = numero1_Ejercicio2 / numero2_Ejercicio2;
+        resultado_Ejercicio2 = parseFloat(Math.round(resultado_Ejercicio2))
+        console.log(`El resultado de ${operacion} de ${numero1_Ejercicio2} y ${numero2_Ejercicio2} es ${resultado_Ejercicio2}`);
         break;
     default:
-        console.log("Operación no válida.");
+        console.error("Operación no válida.");
 }
-
-resultado = Number.parseFloat(resultado.toFixed(2));
-console.log(`El resultado de ${operacion} de ${numero1_Ejercicio2} y ${numero2_Ejercicio2} es ${resultado_Ejercicio2}`);
 
 //Ejercicio 3
 let numero_Ejercicio3= parseInt(prompt("Ingresa un número para multiplicarlo del 1 al 10:"))
